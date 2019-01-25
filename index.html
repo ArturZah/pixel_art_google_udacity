@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker!</title>
+   <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Pacifico" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="cnt">
+      <div class="back"><img src="img/back.gif" class="back_img" alt="backimage" /></div>
+    <h1>Pixel Art Maker</h1>
+      <div class="menu">
+        <div class="menu-content">
+          <h2>Choose Grid Size</h2>
+          <form class="sizePicker">
+              <input type="number" id="input_height" name="height" min="1" max="16" placeholder="Height">
+              <input type="number" id="input_width" name="width" min="1" max="16" placeholder="Width" >
+              <div class="wrap"></div>
+              <input type="submit" id="submit-button" value="Send">
+              <h4>Pick a color</h4>
+              <input type="color" id="colorPicker" value="#414bd8">
+          </form>
+        </div>
+        <div class="menu-label">
+          <p>Menu</p>
+        </div>
+      </div>
+      <div class="pixel-box">
+            <h2>Design Canvas</h2>
+            <div id="pixel_canvas"></div>
+      </div>
+   </div>
+   <div class="info-btn" id="info-btn">Info</div>
+   <div class="info">
+     <h2>About this page</h2>
+     <p>This page was made during Google and Udacity Front End Developer Nanodegree. That was a final test for my skills in this course. The Front End Developer Nanodegree
+     program was a great experiance and nice oportunity to improwe my skills as a front end developer.</p>
+     <p>Feel free to use this code to your own projects! You find it on my GitHub account.</p>
+     <h2>How to use</h2>
+     <p>If you want to create paint grid you need to fill and send height and width values in form on page</p>
+     <p>The max value is 16</p>
+     <p>You can also pick a color of your pixels</p>
+     <p>Songle Click - create color pixel</p>
+     <p>Duble Click - delete color pixel</p>
+   </div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
